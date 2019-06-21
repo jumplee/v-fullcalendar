@@ -1,14 +1,18 @@
 {
   "name": "v-fullCalendar",
   "version": "0.1.0",
-  "private": true,
+  "main": "src/fullCalendar.vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "src"
+  ],
   "dependencies": {
     "core-js": "^2.6.5",
+    "moment": "^2.24.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -18,6 +22,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "postcss-scss": "^2.0.0",
+    "precss": "^4.0.0",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -32,11 +38,6 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
     }
   },
   "browserslist": [
